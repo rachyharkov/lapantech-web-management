@@ -7,6 +7,7 @@
 /app/models/*.php
 /database/migrations/*.php
 /database/seeders/*.php
+/database/factories/*.php
 .env
 .env.backup
 .env.production

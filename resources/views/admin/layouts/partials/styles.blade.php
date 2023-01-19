@@ -4,6 +4,7 @@
 <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
 <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 @livewireStyles
 

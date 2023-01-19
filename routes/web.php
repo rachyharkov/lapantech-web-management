@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,14 +23,10 @@ Auth::routes();
 
 // create a route using the Auth::routes() helper
 Route::middleware(['auth:sanctum', 'verified'])->group(function() {
-    Route::prefix('dashboard')->controller(DashboardController::class)->group(function() {
-        Route::get('/', 'index')->name('dashboard');
-    });
+    Route::prefix('dashboard')->controller(AdminDashboardController::class)->group(function() {
+        Route::get('/', 'index')->name('admin.dashboard');
+        Route::get('/visitor-stats', 'visitorStats')->name('admin.dashboard.visitor-stats');
 
-    Route::prefix('admin')->group(function() {
-        Route::get('/', function() {
-            return 'Admin Dashboard';
-        })->name('admin');
     });
 });
 
