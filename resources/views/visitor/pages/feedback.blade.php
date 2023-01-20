@@ -54,10 +54,6 @@
 
         });
 
-        window.livewire.on('feedbackFormHydrated', () => {
-            console.log('feedbackFormHydrated');
-        })
-
         window.livewire.on('feedbackFormSubmitted', param => {
             alert('Feedback berhasil dikirim');
         })

@@ -28,14 +28,5 @@ class WebsiteRoot extends Component
     {
         $this->page = $page;
         $this->emit('urlChange', $page);
-
-        if ($page == 'feedback') {
-            $this->emit('feedbackFormHydrated');
-        }
-
-        if ($page == 'projects') {
-            $this->emit('galleryPageLoad');
-        }
-
     }
 }
