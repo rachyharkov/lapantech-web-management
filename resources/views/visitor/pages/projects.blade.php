@@ -3,7 +3,9 @@
     <section id="main-hero" class="mb-0">
         <div class="container text-center">
             <h1 class="main-hero-title">Project Lapan Tech</h1>
-            <p class="main-hero-subtitle">Berikut adalah project yang kami kerjakan, beberapa sedang berjalan dan diberi label <span class="badge badge-warning">On Progress</span> dan yang sudah selesai diberi label <span class="badge badge-success">Completed</span></p>
+            <p class="main-hero-subtitle">Berikut adalah project yang kami kerjakan, beberapa sedang berjalan dan diberi
+                label <span class="badge badge-warning">On Progress</span> dan yang sudah selesai diberi label <span
+                    class="badge badge-success">Completed</span></p>
         </div>
     </section>
 
@@ -17,7 +19,7 @@
 
                         <h2>{{ $item->title }}</h2>
                         <p>{{ $item->subtitle }}</p>
-                        <a href="#" class="btn">See Description</a>
+                        <button class="btn btn-outline" style="background: transparent;">See Description</button>
 
                         <div class="description">
                             <p>
@@ -37,52 +39,36 @@
             @endforeach
         </ul>
     </section>
-    @push('js')
-        <script>
-            $(document).ready(function() {
+    <script>
+        $('.description').hide();
 
-                function initGalleryScript() {
-                    $('.description').hide();
+        function showFullHeight() {
 
-                    function showFullHeight() {
+            $('.gallery li').each(function() {
 
-                        $('.gallery li').each(function() {
+                $(this).find('.btn').click(function(e) {
 
-                            $(this).find('.btn').click(function(e) {
+                    console.log('Botão clicado');
 
-                                console.log('Botão clicado');
+                    e.preventDefault();
 
-                                e.preventDefault();
+                    //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+                    $('.description').slideUp('normal');
 
-                                //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
-                                $('.description').slideUp('normal');
+                    //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+                    if ($(this).next().is(':hidden') == true) {
 
-                                //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
-                                if ($(this).next().is(':hidden') == true) {
+                        //ADD THE ON CLASS TO THE BUTTON
+                        $(this).addClass('on');
 
-                                    //ADD THE ON CLASS TO THE BUTTON
-                                    $(this).addClass('on');
+                        //OPEN THE SLIDE
+                        $(this).next().slideDown('normal');
+                    }
+                }); //click
+            }); //each
+        } //function
 
-                                    //OPEN THE SLIDE
-                                    $(this).next().slideDown('normal');
-                                }
-                            }); //click
-                        }); //each
-                    } //function
-
-                    //load the function when the doc is ready
-                    showFullHeight();
-                    //hide all descriptions
-                }
-
-                window.livewire.on('galleryPageLoad', () => {
-                    console.log('galleryPageLoad');
-                    initGalleryScript();
-                })
-
-                initGalleryScript();
-
-            });
-        </script>
-    @endpush
+        //load the function when the doc is ready
+        showFullHeight();
+    </script>
 </div>
