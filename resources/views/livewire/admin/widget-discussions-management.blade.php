@@ -7,7 +7,7 @@
 
             <div class="blog-comments__item d-flex p-3">
                 <div class="blog-comments__avatar mr-3">
-                    <img src="images/avatars/{{ rand(1,3) }}.jpg" alt="avatar {{ $cm->comment_author }}" />
+                    <img src="{{asset('images/avatars/'.rand(1,3)) }}.jpg" alt="avatar {{ $cm->comment_author }}" />
                 </div>
                 <div class="blog-comments__content" style="display: grid;">
                     <div class="blog-comments__meta text-muted">

@@ -1,0 +1,957 @@
+:root {
+    --global-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f6ff;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.container {
+    width: var(--global-width);
+    margin: auto;
+}
+
+/* hero */
+
+#hero {
+    height: 77vh;
+    background-image: url("../img/background.svg");
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+#hero h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-kiri p {
+    color: #eee;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.btn-hero-1 {
+    background-color: #ed930d;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 35px;
+}
+
+.btn-hero-2 {
+    border: 1px solid #33f947;
+    color: #33f947;
+    text-decoration: none;
+    padding: 10px 35px;
+    margin-left: 20px;
+}
+
+.btn-hero-1:hover {
+    color: #fff;
+    background-color: green;
+    transition: 0.3s linear;
+}
+
+.btn-hero-2:hover {
+    color: #fff;
+    background-color: #33f947;
+    transition: 0.3s linear;
+}
+
+.hero-kanan {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-kanan img {
+    width: 496px;
+    height: 482px;
+}
+
+/* jasa dan layanan */
+
+.jasa-title {
+    margin-top: 70px;
+}
+
+.card-layanan {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 60px;
+    box-shadow: 0 1.5px 5px rgba(0, 0, 0, 0), 0 3px 8.8px rgba(0, 0, 0, 0.005),
+        0 4.9px 11.9px rgba(0, 0, 0, 0.013), 0 12px 23px rgba(0, 0, 0, 0.03);
+}
+
+.card-layanan img {
+    transform: translateY(-30px);
+    margin-bottom: -20px;
+    width: 60px;
+    height: 60px;
+}
+
+.card-layanan h3 {
+    color: #324358;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.card-layanan p:nth-child(3) {
+    color: #324358;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 14px;
+    margin-bottom: 24px;
+}
+
+.card-layanan p:nth-child(4) {
+    color: #324358;
+    font-weight: bold;
+}
+
+.card-layanan p:nth-child(4) span {
+    color: #0069ff;
+}
+
+/* about */
+
+#about {
+    margin-top: 60px;
+    padding: 50px;
+    background-image: url("../img/bg_about.svg");
+    background-size: cover;
+}
+
+.about-kiri {
+    text-align: left;
+}
+
+.about-kiri h2 {
+    color: #ffffff;
+}
+
+.about-kiri p {
+    color: #eee;
+    font-weight: 200;
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+.about-btn {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    padding: 10px 35px;
+}
+
+.about-btn:hover {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.about-kanan img {
+    width: 80px;
+    height: 80px;
+}
+
+.about-kanan h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.about-kanan p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Nunito Sans";
+    font-weight: 300;
+}
+
+/* price list */
+
+#price-list {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.price-list-title {
+    margin: 30px;
+}
+
+.price-card {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 40px 0;
+    padding-bottom: 50px;
+}
+
+.price-card a {
+    margin-top: 50px;
+}
+
+.price-card .diskon {
+    color: #ffffff;
+    background-color: #ed930d;
+    padding: 4px;
+    padding-left: 10px;
+    width: 140px;
+    margin-top: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.price-card h3 {
+    color: #0069ff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.price-card strike {
+    color: #324358;
+    font-size: 16px;
+}
+
+.price-card h4 {
+    color: #324358;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.price-card p:nth-child(5) {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.price-card-sub img {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+}
+
+.price-card-sub p {
+    font-size: 16px;
+    color: #324358;
+}
+
+.price-card-sub span {
+    font-weight: bold;
+}
+
+.price-card.spesial {
+    background: linear-gradient(
+        77.69deg,
+        #162b9a 1.22%,
+        #0466ba 99.99%,
+        #0561b7 100%
+    );
+}
+
+.price-card.spesial .diskon {
+    width: 120px;
+}
+
+.price-card.spesial h3,
+.price-card.spesial h4,
+.price-card.spesial p,
+.price-card.spesial strike {
+    color: #ffffff;
+}
+
+.btn-spesial {
+    background-color: #ffffff;
+    color: #0069ff;
+    border: #ffffff ipx solid;
+}
+
+/* testimoni */
+
+#testimoni {
+    margin-top: 60px;
+    background-image: url("../img/bg_testimoni.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.testimoni-title h2 {
+    color: #ffffff;
+    margin: 30px 0;
+    padding-top: 60px;
+}
+
+.testimoni-card {
+    margin: 40px 0;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.testimoni-card h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.testimoni-card img {
+    width: 18px;
+    height: 18px;
+}
+
+/* contact  */
+
+#contact {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.contact-title {
+    padding: 40px 0;
+}
+
+.contact-map iframe {
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-kanan {
+    background-image: url("../img/bg_contact.svg");
+    padding: 30px;
+    height: 400px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.contact-kanan p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.contact-kanan i {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* FaQ */
+
+#faq {
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+
+.faq-title {
+    margin: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.opened {
+    display: block;
+}
+
+.card-faq {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-faq p {
+    margin: 20px 0;
+}
+
+.card-faq h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* footer  */
+
+footer {
+    background-color: #000d32;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+.row-ext {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-logo {
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #737e9e;
+    font-weight: 200;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer a {
+    color: #737e9e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #737e9e;
+    text-decoration: none;
+}
+
+footer .footer-sosmed {
+    width: 30px;
+    height: 30px;
+}
+
+footer .row-ext {
+    margin-left: -20px;
+}
+
+footer .line {
+    border: 1px solid #242b40;
+}
+
+.scrolltop {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    text-align: center;
+    padding: 3px 10px;
+    z-index: 10;
+}
+
+.scrolltop img {
+    width: 60px;
+    height: 60px;
+}
+
+.wa-icon {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    left: 10px;
+    text-align: center;
+    padding: 3px 10px;
+    z-index: 10;
+}
+
+.wa-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --global-width: 920px;
+    }
+
+    #hero {
+        height: 70vh;
+    }
+
+    .hero-kanan img {
+        width: 400px;
+        height: 380px;
+    }
+
+    .card-layanan h3 {
+        font-size: 20px;
+    }
+
+    .card-layanan a,
+    .card-layanan p {
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        width: 120px;
+        height: 35px;
+    }
+
+    footer h3 {
+        font-size: 19px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 17px;
+    }
+
+    footer .footer-sosmed img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    :root {
+        --global-width: 670px;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    .hero-kiri h1 {
+        font-size: 30px;
+    }
+
+    .hero-kiri a {
+        font-size: 15px;
+    }
+
+    .hero-kiri p {
+        font-size: 15px;
+    }
+
+    .btn-hero-1,
+    .btn-hero-2 {
+        width: 300px;
+    }
+
+    .btn-hero-2 {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .hero-kanan img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .card-layanan h3 {
+        font-size: 17px;
+    }
+
+    .card-layanan a,
+    .card-layanan p {
+        font-size: 13px;
+    }
+
+    .about-kiri h2 {
+        font-size: 25px;
+    }
+
+    .about-kiri p {
+        font-size: 15px;
+    }
+
+    .about-kanan img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-kanan h3 {
+        font-size: 17px;
+    }
+
+    .about-kanan p {
+        font-size: 15px;
+    }
+
+    .contact-kanan p,
+    .contact-kanan i {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    #hero {
+        height: 100vh;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    .hero-kiri h1 {
+        font-size: 42px;
+    }
+
+    .btn-hero-1,
+    .btn-hero-2 {
+        margin-top: 25px;
+    }
+
+    .about-kiri {
+        margin-bottom: 40px;
+    }
+
+    .contact-map {
+        margin-bottom: 50px;
+    }
+
+    .contact-kanan {
+        height: 350px;
+    }
+
+    .contact-kanan p,
+    .contact-kanan i {
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        width: 100px;
+        height: 30px;
+    }
+
+    .testimoni-card {
+        text-align: center;
+        width: 200px;
+    }
+
+    footer .row-ext {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 673px) {
+    :root {
+        --global-width: 330px;
+    }
+
+    section {
+        overflow-x: hidden;
+    }
+
+    #hero {
+        height: 800px;
+        overflow-y: hidden;
+        margin-bottom: 40px;
+    }
+
+    .hero-kiri h1 {
+        font-size: 28px;
+    }
+
+    .hero-kiri a {
+        font-size: 15px;
+    }
+
+    .btn-hero-1,
+    .btn-hero-2 {
+        width: 280px;
+    }
+
+    .btn-hero-2 {
+        margin-left: 0;
+    }
+
+    .row-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-kanan img {
+        width: 300px;
+        height: 280px;
+    }
+
+    .jasa-title h2 {
+        font-size: 25px;
+    }
+
+    .card-layanan a {
+        font-size: 15px;
+    }
+
+    .about-kiri {
+        margin-left: -25px;
+        text-align: center;
+    }
+
+    .about-kanan {
+        margin-left: -25px;
+    }
+
+    #price-list .container {
+        margin: auto;
+    }
+
+    .price-list-title {
+        margin-left: 0px;
+    }
+
+    .testimoni-title h2,
+    .jasa-title h2,
+    .price-list-title h2,
+    .faq-title h2 {
+        font-size: 32px;
+    }
+
+    .contact-map iframe {
+        width: 315px;
+        height: 250px;
+        margin-left: -10px;
+    }
+
+    .contact-kanan {
+        height: 480px;
+    }
+
+    .contact-kanan p,
+    .contact-kanan i {
+        font-size: 15px;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: 45px;
+    }
+
+    footer a,
+    footer p {
+        font-size: 17px;
+    }
+
+    footer h3 {
+        font-size: 19px;
+        margin-top: 20px;
+    }
+
+    footer .footer-sosmed img {
+        width: 35px;
+        height: 35px;
+        margin: 12px 0;
+    }
+
+    .row-ext {
+        width: 150px;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .wa-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .scrolltop img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about-kiri {
+        margin-left: -50px;
+        text-align: center;
+    }
+
+    .about-kanan {
+        margin-left: -50px;
+    }
+
+    .price-list-title {
+        margin-left: 0px;
+    }
+}
+
+.peeek-loading {
+    height: 80vh;
+    width: 100%;
+}
+
+.peeek-loading ul {
+    display: inline-block;
+    text-indent: 2.8em;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    left: calc(50% - 0.7em);
+    top: calc(50% - 4.2em);
+    transform: scale(0.7);
+}
+
+.peeek-loading ul li:after,
+.peeek-loading ul:after {
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.peeek-loading ul li:after,
+.peeek-loading ul:after {
+    content: "";
+    display: block;
+}
+
+.peeek-loading ul:after {
+    position: absolute;
+    top: 2.8em;
+}
+
+.peeek-loading li {
+    position: absolute;
+    padding-bottom: 5.6em;
+    top: 0;
+    left: 0;
+}
+
+.peeek-loading li:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: 0.125s;
+}
+
+.peeek-loading li:nth-child(1):after {
+    background: #0465b9;
+    animation-delay: 0.125s;
+}
+
+.peeek-loading li:nth-child(2) {
+    transform: rotate(36deg);
+    animation-delay: 0.25s;
+}
+
+.peeek-loading li:nth-child(2):after {
+    background: #0465b9;
+    animation-delay: 0.25s;
+}
+
+.peeek-loading li:nth-child(3) {
+    transform: rotate(72deg);
+    animation-delay: 0.375s;
+}
+
+.peeek-loading li:nth-child(3):after {
+    background: #0465b9;
+    animation-delay: 0.375s;
+}
+
+.peeek-loading li:nth-child(4) {
+    transform: rotate(108deg);
+    animation-delay: 0.5s;
+}
+
+.peeek-loading li:nth-child(4):after {
+    background: #0465b9;
+    animation-delay: 0.5s;
+}
+
+.peeek-loading li:nth-child(5) {
+    transform: rotate(144deg);
+    animation-delay: 0.625s;
+}
+
+.peeek-loading li:nth-child(5):after {
+    background: #0465b9;
+    animation-delay: 0.625s;
+}
+
+.peeek-loading li:nth-child(6) {
+    transform: rotate(180deg);
+    animation-delay: 0.75s;
+}
+
+.peeek-loading li:nth-child(6):after {
+    background: #0465b9;
+    animation-delay: 0.75s;
+}
+
+.peeek-loading li:nth-child(7) {
+    transform: rotate(216deg);
+    animation-delay: 0.875s;
+}
+
+.peeek-loading li:nth-child(7):after {
+    background: #0465b9;
+    animation-delay: 0.875s;
+}
+
+.peeek-loading li:nth-child(8) {
+    transform: rotate(252deg);
+    animation-delay: 1s;
+}
+
+.peeek-loading li:nth-child(8):after {
+    background: #0465b9;
+    animation-delay: 1s;
+}
+
+.peeek-loading li:nth-child(9) {
+    transform: rotate(288deg);
+    animation-delay: 1.125s;
+}
+
+.peeek-loading li:nth-child(9):after {
+    background: #0465b9;
+    animation-delay: 1.125s;
+}
+
+.peeek-loading li:nth-child(10) {
+    transform: rotate(324deg);
+    animation-delay: 1.25s;
+}
+
+.peeek-loading li:nth-child(10):after {
+    background: #0465b9;
+    animation-delay: 1.25s;
+}
+
+.peeek-loading li {
+    animation: dotAnimation 2.5s infinite;
+}
+.peeek-loading li:after {
+    animation: dotAnimationTwo 2.5s infinite;
+}
+
+@keyframes dotAnimation {
+    0%,
+    55%,
+    100% {
+        padding: 0 0 5.6em 0;
+    }
+    5%,
+    50% {
+        padding: 2.8em 0;
+    }
+}
+@-webkit-keyframes dotAnimationTwo {
+    0%,
+    55%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    5%,
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+}

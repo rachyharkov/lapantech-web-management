@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Lustria|Lato:300);
+ul.gallery div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ul.gallery {
+    list-style: none;
+}
+
+.gallery caption,
+.gallery th,
+.gallery td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.gallery q,
+.gallery blockquote {
+    quotes: none;
+}
+.gallery q:before,
+.gallery q:after,
+.gallery blockquote:before,
+.gallery blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+.gallery article,
+.gallery aside,
+.gallery details,
+.gallery figcaption,
+.gallery figure,
+.gallery footer,
+.gallery header,
+.gallery hgroup,
+.gallery main,
+.gallery menu,
+.gallery nav,
+.gallery section,
+summary {
+    display: block;
+}
+
+ul.gallery {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+ul.gallery li {
+    position: relative;
+    cursor: pointer;
+}
+ul.gallery li .overlay {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+    background: #000;
+    display: blocK;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 8;
+}
+ul.gallery li .info {
+    position: relative;
+    width: 100%;
+    z-index: 8;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 30px 20px 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul.gallery li .info h2 {
+    font-family: "Lustria", serif;
+    font-size: 30px;
+    line-height: 50px;
+}
+ul.gallery li .info p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+ul.gallery li .info .btn {
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 20px;
+}
+ul.gallery li .info .description {
+    display: none;
+}
+ul.gallery li .bg-img img {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
