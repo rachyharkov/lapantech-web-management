@@ -47,7 +47,11 @@
     <div class="container-fluid">
         <div class="row">
             @include('admin.layouts.partials.sidebar')
-            @yield('content')
+            <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+                @include('admin.layouts.partials.navbar')
+                @yield('content')
+                @include('admin.layouts.partials.footer')
+            </main>
         </div>
     </div>
 

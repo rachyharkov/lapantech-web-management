@@ -1,4 +1,4 @@
-<div class="row" wire:poll.5000ms.visible>
+<div class="row">
     <div class="col-lg col-md-6 col-sm-6 mb-4">
         <livewire:admin.widget-count-total-posts />
     </div>

@@ -27,54 +27,54 @@
     </form>
     <div class="nav-wrapper">
         <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">
-                    <i class="material-icons">edit</i>
-                    <span>Blog Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
-                    <i class="material-icons">vertical_split</i>
-                    <span>Daftar Postingan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="add-new-post.html">
-                    <i class="material-icons">note_add</i>
-                    <span>Tambah Post</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                    <i class="material-icons">view_module</i>
-                    <span>Product & Services</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                    <i class="material-icons">table_chart</i>
-                    <span>Dokumentasi</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                    <i class="material-icons">person</i>
-                    <span>Akun</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                    <i class="material-icons">settings</i>
-                    <span>Pengaturan Web</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                    <i class="material-icons">error</i>
-                    <span>Errors</span>
-                </a>
-            </li>
+            <x-admin.menu-item
+                :route="route('admin.dashboard')"
+                :icon="'edit'"
+                :title="'Dashboard'"
+                :active="request()->routeIs('admin.dashboard')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.posts.index')"
+                :icon="'vertical_split'"
+                :title="'Daftar Postingan'"
+                :active="request()->routeIs('admin.posts.index')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.posts.create')"
+                :icon="'note_add'"
+                :title="'Tambah Post'"
+                :active="request()->routeIs('admin.posts.create')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.productandservices.index')"
+                :icon="'view_module'"
+                :title="'Product and Services'"
+                :active="request()->routeIs('admin.productandservices.index')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.projects.index')"
+                :icon="'table_chart'"
+                :title="'Project'"
+                :active="request()->routeIs('admin.projects.index')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.users.index')"
+                :icon="'person'"
+                :title="'Users'"
+                :active="request()->routeIs('admin.users.index')"
+            />
+
+            <x-admin.menu-item
+                :route="route('admin.settings.create')"
+                :icon="'settings'"
+                :title="'Pengaturan'"
+                :active="request()->routeIs('admin.settings.create')"
+            />
         </ul>
     </div>
 </aside>
